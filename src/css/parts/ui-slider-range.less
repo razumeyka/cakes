@@ -1,0 +1,53 @@
+/*ui-slider-range*/
+
+.ui-slider-wr {
+    border: 1px solid rgb(63, 67, 64);
+    border-radius: 5px;
+    background-color: rgba(246, 251, 254, 0.8);
+    padding: 5px;
+    margin-bottom: 30px
+}
+
+.ui-slider {
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    width: 100%;
+    height: 2px;
+}
+
+.ui-slider::last-child {
+    left: 60%;
+}
+
+.ui-slider-range {
+	position: absolute;
+    left: 14%; 
+    height: 2px;
+	z-index: 1;
+	display: block;
+	border: 0;
+    background-color: rgb(63, 67, 64);
+}
+
+.ui-slider-handle {
+	position: absolute;
+    top: -5px;
+    left: 14%;
+	z-index: 2;
+    border-radius: 50%;
+    background-color: rgb(63, 67, 64);
+    width: 12px;
+    height: 12px;
+	cursor: default;
+    outline: none;
+	-ms-touch-action: none;
+	touch-action: none;
+}
+
+.ui-slider-weight {
+    font-size: 21px;
+    color: rgb(55, 54, 54);
+    font-weight: 700;
+    position: absolute;
+    bottom: -22px;
+}

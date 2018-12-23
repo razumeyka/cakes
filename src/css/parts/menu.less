@@ -1,59 +1,45 @@
 /*menu*/
 
 .menu-line {
-    background: #f0e8c1;
+    background: url(../../images/background/nav-background.png) repeat center;
     position: relative;
-}
-
-.menu-line .wrapper {
-    position: relative;
-}
-
-.menu-line__top-background {
-    background: url(../images/nav.menu/nav-top.png) no-repeat center;
-    height: 60px;
-    width: 100%;
-    position: relative;
-    top: -9px;
-}
-
-.menu-line__bottom-background {
-    background: url(../images/nav.menu/nav-bottom.png) no-repeat center;
-    height: 60px;
-    width: 100%;
-    position: relative;
-    bottom: -50px;
+    height: 200px;
+    padding: 50px 0;
     z-index: 1;
 }
 
 .menu-line .wrapper {
+    position: relative;
     justify-content: center;
+}
+
+.navbar {
+    padding: 0;
 }
 
 .menu {
     display: block;
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
-.menu li {
+.menu li.menu__item {
     list-style: none;
     float: left;
     border-radius: 2px;
 }
 
-.menu li:hover {
+.menu li.menu__item:hover {
     background-color: rgba(238, 190, 108, 0.5);
-    box-shadow: 0px 10px 9.8px 0.2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 6px 11.8px 0.2px rgba(0,0,0,0.25);
 }
 
-.menu li a:before{
+.menu li.menu__item a:before{
 	content: "";
     background: url(../images/nav.menu/windmill.svg) no-repeat center;
     background-size: contain;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     top: 10px;
     left: 0;
@@ -86,82 +72,33 @@
     background-size: contain;
 }
 
-.menu a {
-	display: inline-block;
+.menu .menu__item a {
+    display: inline-block;
     font-size: 25px;
-    color: rgb(63, 67, 64);
+    color: #3f4340;
     text-align: center;
     text-decoration: none;
     width: 100%;
     position: relative;
-    padding: 90px 30px 10px;
+    padding: 60px 27px 10px;
     box-sizing: border-box;
-}
-
-.burger {
-    display: none;
-    position: absolute;
-    width: 40px;
-    height: 42px;
-    right: 15px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-    cursor: pointer;
-}
-
-.burger span, .burger span::before, .burger span::after {
-    display: block;
-    cursor: pointer; 
-    height: 3px;
-    width: 30px;
-    background: rgb(255, 255, 255);
-    position: absolute;
-    top: 10px;
-    right: 5px;
-    transition: all 200ms ease-in-out;
-}
-
-.burger span::before {
-    content: '';
-    left: 0;
-}
-
-.burger span::after {
-    content: '';
-    left: 0;
-    top: 20px;
-}
-
-.burger_active span {
-    background-color: transparent;
-}
-    
-.burger_active span::before  {
-    transform: rotate(45deg);
-    top: 8px;
-}
-
-.burger_active span::after  {
-    transform: rotate(-45deg);
-    top: 8px;
 }
 
 .wholesale {
     box-sizing: border-box;
     background: #f0e8c1;
     position: absolute;
-    top: -65px;
-    right: 140px;
-    border: 2px solid rgba(63, 67, 64, 0.5);
-    width: 116px;
+    top: -63px;
+    right: 138px;
+    border: 2px solid rgba(63,67,64,.5);
+    width: 120px;
     height: 166px;
     font-size: 37px;
     line-height: 1;
-    color: rgba(63, 67, 64, 0.902);
+    color: rgba(63,67,64,.902);
     font-weight: 700;
     text-align: center;
-    padding:  30px 10px 10px;
+    padding: 30px 10px 10px;
 }
 
 .wholesale__icon {
@@ -170,4 +107,27 @@
     width: 55px;
     height: 55px;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1279px) {
+    .wholesale {
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .menu__item a {
+        padding: 60px 5px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-line {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    
 }

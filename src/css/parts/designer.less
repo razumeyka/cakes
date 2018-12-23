@@ -1,0 +1,443 @@
+/*designer*/
+
+.designer {
+    background: url(../../images/background/designer_background-center.png) no-repeat repeat center;
+    background-size: 100%;
+    padding: 0 100px;
+    position: relative;
+}
+
+.designer__backgrround_top {
+    background: url(../../images/background/designer_background-top.png) no-repeat center;
+    background-size: contain;
+    width: 100%;
+    height: 289px;
+    position: absolute;
+    top: -145px;
+    left: 0;
+}
+
+.designer__backgrround_bottom {
+    background: url(../../images/background/designer_background-bottom.png) no-repeat center;
+    background-size: 100%;
+    width: 100%;
+    height: 125px;
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+
+.designer__content {
+    position: relative;
+}
+
+.designer__caption {
+    font-size: 83px;
+    color: rgba(63,67,64,.702);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+
+.designer__line {
+    border-radius: 2px;
+    background-color: rgb(132, 135, 135);
+    box-shadow: inset 0px 2px 1.9px 0.1px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 5px;
+    margin-bottom: 25px;
+}
+
+.designer__carousel{
+    position: relative;
+    max-width: 730px;
+    margin: 0 auto 55px;
+}
+
+.designer__carousel_wr{
+    overflow: hidden;
+}
+
+.designer__content_wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.designer__content_container {
+    width: 100%;
+}
+
+.designer__long{
+	width:1000%; 
+    transition: all 0.15s linear 0s;
+}
+
+.designer__one_doc{
+    padding: 0 20px;
+    box-sizing: border-box;
+    float: left;
+    width: 2.5%;
+}
+
+.designer__one_doc-inner{
+    box-sizing: border-box;
+	width: 100%;
+    font-size: 0;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.designer__one_doc-inner:hover {
+    border-radius: 5px;
+    background-color: rgba(238, 190, 108, 0.5);
+}
+
+.designer__one_doc img{
+	width: 100%;
+}
+
+.designer__cake-name {
+    display: block;
+    font-size: 33px;
+    color: rgb(63, 67, 64);
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+}
+
+input[type="radio"], input[type="file"] {
+    display: none;
+}
+
+.designer__carousel-control{
+    width: 35px;
+    height: 40px;
+	cursor:pointer;
+    position: absolute;
+    top: 70px;
+}
+
+.designer__carousel-control.next{
+    background: url(../../images/icons/right-arrow.svg) no-repeat center;
+    right: -50px;
+}
+
+.designer__carousel-control.next:hover {
+    background: url(../../images/icons/right-arrow_hover.svg) no-repeat center;
+}
+
+.designer__carousel-control.prev{
+    background: url(../../images/icons/right-arrow.svg) no-repeat center;
+    transform: rotate(180deg);
+    left: -50px;
+}
+
+.designer__carousel-control.prev:hover {
+    background: url(../../images/icons/right-arrow_hover.svg) no-repeat center;
+}
+
+.designer__small-caption {
+    font: 700 62px "FinchFrame3";
+    color: rgb(63, 67, 64);
+    text-align: center;
+    text-shadow: 0px 10px 14.7px rgba(0, 0, 0, 0.41);
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.columns__column {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+
+.columns__caption {
+    font-size: 58px;
+    color: rgb(63, 67, 64);
+    font-weight: 700;
+    margin: 30px 0 20px;
+    text-align: center;
+}
+
+.designer__item {
+    padding: 5px 0;
+}
+
+.designer__item {
+    margin: 17px 0;
+}
+
+.designer__question {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 60px;
+    cursor:pointer;
+    font-size: 41px;
+    color: rgb(63, 67, 64);
+}
+
+.designer__question::before {
+    content: "";
+    background: #f0e8c1;
+    border: 2px solid #f5cbc9;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 20px;
+    top: 18px;
+}
+
+.designer__answer {
+    padding: 20px 0 0 30px;
+}
+
+.radio-wrapper_shape {
+    margin-right: 30px;
+}
+
+.radio-img_wr {
+    display: block;
+    background-color: rgb(246, 251, 254);
+    box-shadow: 0px 8px 16.15px 0.85px rgba(1, 3, 0, 0.25);
+    width: 100px;
+    height: 80px;
+}
+
+.radio-label.radio-label_black:before {
+    border: 1px solid rgb(0, 0, 0);
+    width: 10px;
+    height: 10px;
+}
+
+.radio-label.radio-label_black:after {
+    display: none;
+    content: "";
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    background-color: rgb(63, 67, 64);
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    top: 18px;
+    left: 3px;
+
+}
+
+.radio-wrapper.active .radio-label.radio-label_black:after {
+    display: block;
+}
+
+.modalbox-layer {
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 60px;
+    cursor:pointer;
+    font-size: 41px;
+    color: rgb(63, 67, 64);
+}
+
+.modalbox-layer::before {
+    content: "";
+    background: #f0e8c1;
+    border: 2px solid #f5cbc9;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 20px;
+    top: 18px;
+}
+
+.file-wrapper {
+    background: rgb(246, 251, 254);
+    border: 2px solid rgba(63, 67, 64, 0.7);
+    border-radius: 2px;
+    box-shadow: 0px 7px 7.8px 2.2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    font-size: 33px;
+    color: rgb(63, 67, 64);
+    font-weight: 700;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.designer__delivery {
+    margin: 0 auto;
+}
+
+.input-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto 30px;
+}
+
+.input-label {
+    display: block;
+    font-size: 25px;
+    font-family: "FinchFrame3";
+    color: rgb(63, 67, 64);
+    padding-left: 35px;
+}
+
+.input {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid rgb(63, 67, 64);
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0px 7px 7.8px 2.2px rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 33px;
+}
+
+.radio-wrapper {
+    display: block;
+    cursor: pointer;
+}
+
+.radio-wrapper_delivery {
+    margin: 0 auto;
+}
+
+.radio-label {
+    display: block;
+    font-size: 29px;
+    color: rgb(63, 67, 64);
+    padding: 5px 0 5px 29px;
+    position: relative;
+}
+
+.radio-label:before {
+    content: "";
+    border: 2px solid #f5cbc9;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0px;
+    top: 15px;
+}
+
+.radio-wrapper.active .radio-label.radio-label_biege:before  {
+    background: #f0e8c1;
+}
+
+
+.input-data-wrapper {
+    position: relative;
+}
+
+.input-data-label {
+    background: url(../../images/icons/calendar.png) no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -34px;
+    top: 4px;
+}
+
+.ui-datepicker {
+    background: #ffffff;
+    padding: 10px;
+    top: 3374px;
+}
+
+.ui-datepicker-calendar a {
+    color: rgb(63, 67, 64);
+}
+
+.textarea-wrapper {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.textarea-label {
+    font-size: 33px;
+    color: rgb(63, 67, 64);
+    padding-left: 25px;
+}
+
+.textarea {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgb(63, 67, 64);
+    border-radius: 2px;
+    width: 100%;
+    height: 130px;
+    min-height: 130px;
+    resize: vertical;
+    padding: 0 20px;
+    font-size: 33px;
+}
+
+.button_designer {
+    margin: 30px auto;
+    width: 400px;
+}
+
+@media screen and (max-width: 1279px) {
+    
+}
+
+@media screen and (max-width: 1023px) {
+    
+    .designer {
+        padding: 0 30px;
+    }
+    
+    .columns__column {
+        padding: 0 20px;
+    }
+    
+    .designer__carousel {
+        max-width: 570px;
+    }
+    
+    .designer__content_container {
+        width: 133%;
+    }
+    
+    .designer__one_doc {
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+    .designer__caption {
+        font-size: 42px;
+    }
+    
+    .designer__carousel {
+        max-width: 230px;
+    }
+    
+    .designer__content_container {
+        width: 400%;
+    }
+    
+    .columns {
+        flex-direction: column;
+    }
+    
+    .columns__column {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    
+}
+
+
+
+

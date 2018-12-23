@@ -3,27 +3,28 @@
 @import "parts/header.less";
 @import "parts/menu.less";
 @import "parts/slider.less";
+@import "parts/designer.less";
+@import "parts/layer-slider.less";
+@import "parts/ui-slider-range.less";
 @import "parts/footer.less";
-
 
 /*main-screen*/
 
 .main-screen {
-    background: url(../images/bg3.png) repeat center;
+    background: url(../images/background/main-background.png) repeat center;
     background-size: cover;
-    padding: 100px 0;
+    padding: 100px 0 170px;
 }
 
 /*catalog*/
 
 .catalog {
     background: #f7fbfe;
-    margin: 0 -20px;
     position: relative;
 }
 
 .catalog_home {
-    margin-bottom: 110px;
+    margin-bottom: 275px;
 }
 
 .catalog__item {
@@ -60,26 +61,85 @@
     bottom: -114px;
 }
 
-/*designer*/
+/*advantages*/
 
-.designer__caption {
-    font-size: 83px;
-    color: rgba(63, 67, 64, 0.702);
-    font-weight: 700;
-    text-align: center;
+.advantages {
+    background: url(../images/background/advabtages-back.png) repeat center rgba(246,251,254,0.7);
+    background-size: contain;
+    box-sizing: border-box;
+    border-top: 5px solid rgb(245, 203, 201);
+    border-bottom: 5px solid rgb(245, 203, 201);
 }
 
+.advantages__caption {
+    font-size: 104px;
+    color: rgb(63, 67, 64);
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 10px 14.7px rgba(0, 0, 0, 0.41);
+    -webkit-text-stroke: 2px #eebe6c;
+}
+
+.animals {
+    background: url(../images/background/animals-back.png) no-repeat center bottom;
+    background-size: 80% 100%;
+    padding-bottom: 333px;
+}
+
+.animals__cloud {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 25%;
+    height: 325px;
+    padding-top: 80px
+}
+
+.animals__text {
+    font-size: 33px;
+    color: rgba(63, 67, 64, 0.9);
+    text-align: center;
+    max-width: 170px;
+}
+
+.animals__text span {
+    text-transform: uppercase;
+}
+
+.animals__cloud_1 {
+    background: url(../images/background/cloud1.png) no-repeat center;
+    background-size: 100%;
+}
+
+.animals__cloud_2 {
+    background: url(../images/background/cloud2.png) no-repeat center;
+    background-size: 100%;
+}
+
+.animals__text_cloud_2 {
+    transform: rotate(8deg);
+}
+
+.animals__cloud_3 {
+    background: url(../images/background/cloud3.png) no-repeat center;
+    background-size: 100%;
+}
+
+.animals__text_cloud_3 {
+    transform: rotate(345deg);
+}
+
+.animals__cloud_4 {
+    background: url(../images/background/cloud4.png) no-repeat center;
+    background-size: 100%;
+}
+
+.animals__text_cloud_4 {
+    transform: rotate(5deg);
+}
 
 
 /*media*/
-
-@media screen and (max-width: 1500px) {
-	
-}
-
-@media screen and (max-width: 1366px) {
-    
-}
 
 @media screen and (max-width: 1279px) {
     .wrapper {
@@ -88,7 +148,22 @@
 }
 
 @media screen and (max-width: 1023px) {
-
+    .catalog__item {
+        width: 50%;
+    }
+    
+    .animals {
+        background: none;
+        padding-bottom: 50px;
+    }
+    
+    .animals__cloud {
+        width: 50%;
+    }
+    
+    .animals__cloud_1, .animals__cloud_2, .animals__cloud_3 , .animals__cloud_4 {
+        background-size: contain;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -96,5 +171,11 @@
 }
 
 @media screen and (max-width: 639px) {
+    .catalog__item {
+        width: 100%;
+    }
     
+    .animals__cloud {
+        width: 100%;
+    }
 }

@@ -1,0 +1,177 @@
+<div class="designer">
+    <div class="designer__backgrround_top"></div>
+    <div class="designer__backgrround_bottom"></div>
+    <div class="designer__content">
+        <h1 class="designer__caption">Закажи тортик своей мечты</h1>
+        <div class="designer__line"></div>
+        <form action="">
+        <div class="designer__carousel" data-slide="0">
+            <div class="designer__carousel_wr" >
+                <div class="designer__content_wrapper">
+                <div class="designer__content_container">
+                    <div class="designer__long">
+                        <div class="designer__one_doc">
+                            <div class="designer__one_doc-inner">
+                                <label>
+                                    <img src="images/462_prev.jpeg" alt="торт">
+                                    <span class="designer__cake-name">Блинный</span>
+                                    <input type="radio">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="designer__one_doc">
+                            <div class="designer__one_doc-inner">
+                                <label>
+                                    <img src="images/455_prev.jpeg" alt="торт">
+                                    <span class="designer__cake-name">Медовый</span>
+                                    <input type="radio">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="designer__one_doc">
+                            <div class="designer__one_doc-inner">
+                                <label>
+                                    <img src="images/460_prev.jpeg" alt="торт">
+                                    <span class="designer__cake-name">Тирамису</span>
+                                    <input type="radio">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="designer__one_doc">
+                            <div class="designer__one_doc-inner">
+                                <label>
+                                    <img src="images/458_prev.jpeg" alt="торт">
+                                    <span class="designer__cake-name">Чизкейк творожный</span>
+                                    <input type="radio">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="designer__one_doc">
+                            <div class="designer__one_doc-inner">
+                                <label>
+                                    <img src="images/460_prev.jpeg" alt="торт">
+                                    <span class="designer__cake-name">Медовый</span>
+                                    <input type="radio">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>	
+            </div>
+            <div class="designer__carousel-control next"></div>
+            <div class="designer__carousel-control prev"></div>
+        </div>
+        <h2 class="designer__small-caption">Собери свой торт</h2>
+        <div class="columns flex">
+            <div class="columns__column column_designer">
+                <div class="columns__caption">Конструктор тортика</div>
+                <div class="designer__items">
+                    <div class="designer__item">
+                        <div class="designer__question">Форма</div>
+                        <div class="designer__answer">
+                            <div class="designer__shape flex">
+                                <label class="radio-wrapper radio-wrapper_shape">
+                                    <span class="radio-img_wr">
+                                        <img src="images/shape-round.png" alt="">
+                                    </span>
+                                    <span class="radio-label radio-label_black">Круглая</span>
+                                    <input type="radio" checked="checked">
+                                </label>
+                                <label class="radio-wrapper radio-wrapper_shape">
+                                    <span class="radio-img_wr">
+                                        <img src="images/shape-square.png" alt="">
+                                    </span>
+                                    <span class="radio-label radio-label_black">Квадратная</span>
+                                    <input type="radio">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="designer__item">
+                        <a data-fancybox data-src="#hidden-content" href="javascript:;" class="modalbox-layer">Корж</a>
+                        @@include('layer-slider.html')
+                    </div>
+                    <div class="designer__item">
+                        <div class="designer__question">Крем</div>
+                        <div class="designer__answer">
+                            <label class="radio-wrapper">
+                                <span class="radio-label radio-label_black">Бисквитно-ванильный</span>
+                                <input type="radio" checked="checked">
+                            </label>
+                            <label class="radio-wrapper">
+                                <span class="radio-label radio-label_black">Бисквитно-шоколадный</span>
+                                <input type="radio">
+                            </label>
+                            <label class="radio-wrapper">
+                                <span class="radio-label radio-label_black">Миндально-ореховый</span>
+                                <input type="radio">
+                            </label>
+                            <label class="radio-wrapper">
+                                <span class="radio-label radio-label_black">Медовый</span>
+                                <input type="radio">
+                            </label>
+                            <label class="radio-wrapper">
+                                <span class="radio-label radio-label_black">Корж из слоеного теста</span>
+                                <input type="radio">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="designer__item">
+                        <div class="designer__question">Вес</div>
+                        <div class="designer__answer">
+                            @@include('ui-slider-range.html')
+                            <label class="input-wrapper">
+                                <input class="input" type="text" placeholder="вес торта">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <label class="file-wrapper file-wrapper_designer">
+                    <input type="file" name="file" multiple="multiple">	
+                    <span>Загрузить эскиз</span>	
+                </label>
+            </div>
+            <div class="columns__column column_contacts">
+                <div class="columns__caption">Контактная информация</div>
+                <label class="input-wrapper">
+                    <span class="input-label">Ваше имя*</span>
+                    <input class="input" type="text" required>
+                </label>
+                <label class="input-wrapper">
+                    <span class="input-label">Контактный телефон*</span>
+                    <input class="input" type="tel" required>
+                </label>
+                <label class="input-wrapper">
+                    <span class="input-label">Электронная почта</span>
+                    <input class="input" type="email">
+                </label>
+                <div class="flex">
+                    <div class="designer__delivery">
+                        <label class="radio-wrapper radio-wrapper_delivery">
+                            <span class="radio-label radio-label_biege">Привезите тортик</span>
+                            <input type="radio">
+                        </label>
+                        <label class="radio-wrapper radio-wrapper_delivery">
+                            <span class="radio-label radio-label_biege">Заберу сам</span>
+                            <input type="radio" checked="checked">
+                        </label>
+                    </div>
+                </div>
+                <div class="columns__caption">Дата и время доставки</div>
+                <label class="input-data-wrapper input-wrapper">
+                    <span class="input-data-label"></span>
+                    <input type="text" class="input input-data" id="datepicker" placeholder="дд/мм/гг">
+                </label>
+            </div>
+        </div>
+        <div class="flex">
+            <label class="textarea-wrapper">
+                <span class="textarea-label">Комментарии к заказу</span>
+                <textarea type="text" name="description" value="" class="textarea" placeholder="Ваш комментарий..."></textarea>	
+            </label>	
+            <button class="button button_blue button_designer">Отправить заявку</button>
+        </div>
+        </form>
+    </div>
+</div>

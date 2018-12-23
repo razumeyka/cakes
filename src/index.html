@@ -3,7 +3,7 @@
 @@include('template/head.html')
 <body>
     @@include('template/header.html')
-    
+    @@include('template/menu.html')
     @@include('template/slider.html')
     <div class="main-screen">
         <div class="wrapper">
@@ -47,15 +47,41 @@
                 </a>
                 <div class="catalog__leaks"></div>
             </div>
-            <div class="designer">
-                <div class="designer__caption">Закажи тортик своей мечты</div>
+            @@include('template/designer.html')
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="wrapper">
+            <div class="advantages__caption">Наша миссия</div>
+            <div class="animals flex">
+                <div class="animals__cloud animals__cloud_1">
+                    <div class="animals__text animals__text_cloud_1">
+                        <span>Свежее</span> и качественное - <span>поэтому</span> вкусное!
+                    </div>
+                </div>
+                <div class="animals__cloud animals__cloud_2">
+                    <div class="animals__text animals__text_cloud_2">
+                        <span>Большой</span>
+                        ассортимент!! есть из чего выбрать!
+                    </div>
+                </div>
+                <div class="animals__cloud animals__cloud_3">
+                    <div class="animals__text animals__text_cloud_3">               <span>Вежливое</span> обслуживание - поднимут настроение
+                    </div>
+                </div>
+                <div class="animals__cloud animals__cloud_4">
+                    <div class="animals__text animals__text_cloud_4">
+                        Не только <span>вкусно, но и полезно</span> мы не используем свиной жир
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     @@include('template/footer.html')
 </body>
 <script src="/js/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="/js/main.js"></script>
-<script src="/js/slick.min.js"></script>
 </html> 

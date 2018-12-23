@@ -1,20 +1,92 @@
 <header>
     <div class="wrapper flex_between">
-        <div class="bordered-top-bottom bordered-top-bottom_header">
-            <div class="bordered-top-bottom__time">с 9:00 до 22:00</div>
-            <a href="tel:+79221816600" class="bordered-top-bottom__tel">+7(922)-181-66-00</a>
-        </div>
-        <div class="bordered-top-bottom bordered-top-bottom_header">
-            <div class="bordered-top-bottom__address">ул. 40 лет октября 42/1 Индустрии 104. ЖК Каскад</div>
-        </div>
-        <a href="/" class="logo"></a>   
-        <a href="#" class="bordered-top-bottom bordered-top-bottom_login bordered-top-bottom_header">
-            <div class="bordered-top-bottom__account">ЛИЧНЫЙ КАБИНЕТ</div>
-            <div class="bordered-top-bottom__login">Вход / Регистрация</div>
+        <a data-fancybox data-src="#mobile-menu" href="javascript:;" class="burger">
+            <span></span>
         </a>
-        <a href="#" class="cart">
-            <div class="cart__icon"></div>
-            <div class="cart__sum">13 025 р</div>
-        </a>
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu__caption">Разделы сайта</div>    
+            <nav class="navbar navbar_mobile">
+                <ul class="menu">
+                    <li class="menu__item_mobile">
+                        <a href="#">О компании</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                        <a href="#">Новости</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                        <a href="#">Заказать торт</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Бонусы</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Контакты</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="menu__item_mobile menu__item_wholesale">
+                       <a href="#">Оптовым клиентам</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="mobile-menu__caption">Разделы меню</div>
+            <nav class="navbar navbar_mobile">
+                <ul class="menu">   
+                    <li class="menu__item_mobile">
+                        <a href="#">Пицца</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                        <a href="#">Пироги</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                        <a href="#">Торты в ассортименте</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Тандыр и хлеба</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Вкусная выпечка</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Сладенькое</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Мини-версии</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Candy bar</a>
+                    </li>
+                    <li class="menu__item_mobile">
+                       <a href="#">Напитки</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="flex">
+            <div class="bordered-top-bottom bordered-top-bottom_header bordered-top-bottom_time-tel">
+                <div class="bordered-top-bottom__time">с 9:00 до 22:00</div>
+                <a href="tel:+79221816600" class="bordered-top-bottom__tel">+7(922)-181-66-00</a>
+            </div>
+            <div class="bordered-top-bottom bordered-top-bottom_header bordered-top-bottom_address">
+                <div class="bordered-top-bottom__address">ул. 40 лет октября 42/1 Индустрии 104. ЖК Каскад</div>
+            </div>
+        </div>
+        <div class="logo-tel_for-mobile flex">
+            <a href="/" class="logo"></a>
+            <a href="tel:+79221816600" class="bordered-top-bottom__tel bordered-top-bottom__tel_mobile">+7(922)-181-66-00</a> 
+        </div>  
+        <div class="flex">
+            <a href="#" class="bordered-top-bottom bordered-top-bottom_login bordered-top-bottom_header">
+                <div class="bordered-top-bottom__account">ЛИЧНЫЙ КАБИНЕТ</div>
+                <div class="bordered-top-bottom__login">Вход / Регистрация</div>
+            </a>
+            <a href="#" class="cart">
+                <div class="cart__icon">
+                    <div class="cart__amount">4</div>
+                </div>
+                <div class="cart__sum">13 025 р</div>
+            </a>
+        </div>
     </div>
 </header>

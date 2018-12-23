@@ -2,10 +2,60 @@
 
 header {
     box-sizing: border-box;
-    background: rgb(246, 251, 254);
+    background: url(../../images/background/header_background.png) repeat center rgb(246, 251, 254);
     box-shadow: 0px 5px 16px 4px rgba(0, 0, 0, 0.2);
     position: relative;
-    z-index: 1;
+    z-index: 2;
+}
+
+.mobile-menu {
+    display: none;
+    background: #dee2e5;
+}
+
+.navbar_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.mobile-menu__caption {
+    font: 700 41px "FinchFrame3";
+    color: rgb(63, 67, 64);
+    text-align: center;
+    border-bottom: 2px solid rgb(63, 67, 64);
+}
+
+.menu__item_mobile {
+    list-style: none;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+
+.menu__item_wholesale {
+    border-bottom: 2px dashed rgb(63, 67, 64);
+    border-top: 2px dashed rgb(63, 67, 64);
+    padding: 5px 10px;
+}
+
+.menu__item_wholesale a {
+    text-transform: uppercase;
+}
+
+.menu__item_mobile:hover {
+    background: #3f4340;
+}
+
+.menu__item_mobile:hover a {
+    color: rgb(255,255,255);
+}
+
+.menu__item_mobile a {
+    display: block;
+    font: 700 29px "FinchFrame3";
+    color: rgb(63, 67, 64);
+    text-align: center;
 }
 
 .bordered-top-bottom {
@@ -13,11 +63,12 @@ header {
     border-top: 1px solid rgba(63, 67, 64, 0.5);
     border-bottom: 1px solid rgba(63, 67, 64, 0.5);
     max-width: 170px;
-    padding: 5px 10px;
+    padding: 0px 20px;
+    letter-spacing: 0.1px;
 }
 
 .bordered-top-bottom_header {
-    margin: 20px 0;
+    margin: 20px 20px 20px 0;
 }
 
 .bordered-top-bottom__time {
@@ -39,12 +90,20 @@ header {
     text-align: center;
 }
 
+.logo-tel_for-mobile {
+    flex-direction: column;
+}
+
 .logo {
     display: block;
     background: url(../images/logo.png) no-repeat center;
     background-size: contain;
     width: 380px;
     height: 100px;
+}
+
+.bordered-top-bottom__tel_mobile {
+    display: none;
 }
 
 .bordered-top-bottom_login {
@@ -56,11 +115,14 @@ header {
 .bordered-top-bottom_login:before {
     content: "";
     background: url(../images/icons/login.png) no-repeat center;
+    background-size: 100%;
     width: 40px;
     height: 50px;
     position: absolute;
     left: 0;
-    top: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 
 .bordered-top-bottom__account {
@@ -78,17 +140,144 @@ header {
 .cart {
     background: #f3f1df;
     text-decoration: none;
-    padding: 0 30px;
+    padding: 13px 20px;
 }
 
 .cart__icon {
     background: url(../images/icons/cart.png) no-repeat center;
+    background-size: 100%;
     width: 50px;
     height: 50px;
+    position: relative;
+}
+
+.cart__amount {
+    border-radius: 50%;
+    background-color: rgb(238,190,108);
+    position: absolute;
+    top: 3px;
+    right: -4px;
+    font-size: 21px;
+    line-height: 1;
+    color: rgba(63,67,64,.902);
+    text-align: center;
+    padding: 0 8px;
 }
 
 .cart__sum {
     font: 700 21px "FinchFrame3";
     color: rgb(0, 0, 0);
     text-align: center;
+}
+
+.burger {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 42px;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.burger span, .burger span::before, .burger span::after {
+    display: block;
+    cursor: pointer; 
+    height: 3px;
+    width: 30px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.burger span::before {
+    content: '';
+    left: 0;
+}
+
+.burger span::after {
+    content: '';
+    left: 0;
+    top: 20px;
+}
+
+@media screen and (max-width: 1279px) {
+    
+    .bordered-top-bottom__account, .bordered-top-bottom__login {
+        display: none;
+    }
+    
+    .bordered-top-bottom_login {
+        padding: 0 30px;
+    }
+    
+    .bordered-top-bottom_login:before {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .bordered-top-bottom_address {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .burger {
+        display: block;
+    }
+    
+    .bordered-top-bottom_time-tel {
+        display: none;
+    }
+    
+    .logo-tel_for-mobile {
+        width: 160px;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto; 
+    }
+    
+    header .logo {
+        width: 155px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    
+    .bordered-top-bottom__tel_mobile {
+        display: block;
+    }
+    
+    .bordered-top-bottom_login {
+        padding: 0 10px;
+        margin-right: 10px;
+    }
+    
+    .bordered-top-bottom_login:before {
+        width: 20px;
+        height: 25px;
+    }
+    
+    .cart {
+        padding: 10px 5px;
+    }
+    
+    .cart__icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .cart__amount {
+        top: -7px;
+        right: -10px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    
 }
