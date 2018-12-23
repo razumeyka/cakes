@@ -41,6 +41,7 @@ $(document).ready(function(){
             },
         slide: function( event, ui ) {
             $("#weight").html( ui.value + "кг");
+            $(".input_weight").val( ui.value + "кг" );
         }
     });
     
