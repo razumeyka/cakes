@@ -57,6 +57,10 @@ a:hover {
     text-decoration: none;
 }
 
+input[type="radio"], input[type="file"], input[type="checkbox"] {
+    display: none;
+}
+
 .wrapper {
     max-width:1260px;
     padding:0 40px;
@@ -86,13 +90,18 @@ a:hover {
 .button_blue {
     border: 2px solid rgb(63, 67, 64);
     border-radius: 2px;
-    background-color: rgb(246, 251, 254);
+    background: rgb(246, 251, 254);
     box-shadow: 0px 7px 7.8px 2.2px rgba(0, 0, 0, 0.2);
     font-size: 41px;
     color: rgb(63, 67, 64);
     font-weight: 700;
     text-transform: uppercase;
     padding: 7px 30px;
+}
+
+.button_blue:hover {
+    background: #3f4340;
+    color: rgb(255,255,255);
 }
 
 .button_center {

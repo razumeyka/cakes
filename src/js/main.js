@@ -1,4 +1,5 @@
 @@include('./lib/jquery.fancybox.min.js')
+@@include('./lib/number_plugin.js')
 
 $(document).ready(function(){
     
@@ -21,12 +22,19 @@ $(document).ready(function(){
 		$(this).closest('.designer__carousel').data('slide',slide);
     });
     
-// designer question-answer
+// question-answer
     
     $(".designer__answer").hide();
     $('.designer__question').click(function(){
         $(this).next().slideToggle(500);
     });
+    
+    $(".catalog-filters__answer").hide();
+    $('.catalog-filters__question').click(function(){
+        $(this).next().slideToggle(500);
+        $(this).toggleClass('catalog-filters__question_active');
+    });
+     
     
 // weight-range
     
@@ -37,7 +45,7 @@ $(document).ready(function(){
         value: 2.5,
         create: function( event, ui ) {
             val = $( "#slider-range" ).slider("value");
-				$("#weight").html( val + "кг" );
+            $("#weight").html( val + "кг" );
             },
         slide: function( event, ui ) {
             $("#weight").html( ui.value + "кг");
@@ -45,13 +53,33 @@ $(document).ready(function(){
         }
     });
     
+// price-range
+    
+    $( "#slider-price" ).slider({
+        range: true,
+        min: 3000,
+        max: 20000,
+        step : 1,
+        values: [ 3000, 15000 ],
+        slide: function( event, ui ) {
+			$("#amount1_input").val( ui.values[ 0 ]);
+			$("#amount2_input").val( ui.values[ 1 ]);
+			$("#amount1").html( ui.values[ 0 ]);
+			$("#amount2").html( ui.values[ 1 ]);
+    	}
+    });
+	$("#amount1").html($("#slider-price").slider( "values", 0 ));
+    $("#amount1_input" ).val($("#slider-price").slider( "values", 0 ));
+	$("#amount2").html($("#slider-price").slider( "values", 1 ));
+	$("#amount2_input" ).val($("#slider-price").slider( "values", 1 ));
+	
+        
 // modal
     
     $().fancybox();
     
 // layer   
-    
-    var slideNow = 1;   
+		
     var navBtnId = 0;
     $('.radio-wrapper_layer').click(function() {   
             navBtnId = $(this).index();
@@ -85,12 +113,37 @@ $(document).ready(function(){
         $(this).addClass('active');
         $(this).parent().addClass('changed');
     });
+	
+// checkbox
+	
+$('.checkbox-label input').change(function(){
+        $(this).closest('.checkbox-label').toggleClass('active');
+	});
+	
+// select 
+        
+    $('.select__field').click(function(){
+		$('.select').not($(this).closest('.select')).removeClass('active').find("ul").fadeOut(200);
+		$(this).closest('.select').toggleClass('active').find("ul").fadeToggle(200);
+	})
+	
+	$('.select li').click(function(){
+		$(this).closest('.select').find('input').val($(this).data('value'));
+		$(this).closest('.select').find('.select__field').html($(this).html());
+		$(this).closest('.select').toggleClass('active').addClass('select_changed');
+        $(this).closest(".select ul").fadeOut(200); 
+	})
+	
+// input-type-number
+	
+	$('.numb').number_plugin({
+		width: '65px',
+		height: '32px',
+   });
     
 // datepicker
     
-    $( function() {
-        $( "#datepicker" ).datepicker();
-    });  
+    $( "#datepicker" ).datepicker();
     
 // mask
     $('input[type="tel"]').mask("8-999-999-99-99");
