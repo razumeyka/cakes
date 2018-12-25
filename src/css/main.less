@@ -168,6 +168,13 @@
 
 /*catalog-page*/
 
+.main-screen_inner-page {
+	background: url(../images/background/inner-page.png) repeat center;
+	background-size: contain;
+	margin-top: -50px;
+}
+
+
 .breadcrumbs {
     list-style: none;
     padding: 0;
@@ -319,6 +326,8 @@
     cursor: pointer;
     position: relative;
 	padding-left: 10px;
+	position: relative;
+	z-index: 1;
 }
 
 .catalog-filters__question::after {
@@ -336,6 +345,8 @@
 
 .catalog-filters__answer {
     padding: 10px 0;
+	position: relative;
+	z-index: 1;
 }
 
 .checkbox-label {
@@ -367,6 +378,8 @@
 	width: 100%;
 	margin-top: 30px;
 	padding: 0 30px;
+    position: relative;
+	z-index: 1;
 }
 
 .catalog-plates {
@@ -665,6 +678,10 @@
 	text-align: center;
 }
 
+.card__filters_mobile {
+	display: none;
+}
+
 .card-buttons {
 	margin: 30px 0 10px;
 	flex-wrap: nowrap;
@@ -764,6 +781,22 @@
 	.card-info__column {
 		width: 100%;
 	}
+	
+	.card-info__photo {
+		margin-bottom: 15px;
+	}
+	
+	.card__filters_desktop {
+		display: none;
+	}
+	
+	.card__filters_mobile {
+		display: flex;
+	}
+	
+	.card-buttons {
+		margin: 20px 0;
+	}
 }
 
 @media screen and (max-width: 639px) {
@@ -783,6 +816,9 @@
 		width: 100%;
 	}
 	
+	.select__field_price {
+		width: 200px;
+	}	
 }
 
 @media screen and (max-width: 500px) {
