@@ -139,7 +139,12 @@ $('.checkbox-label input').change(function(){
 	$('.numb').number_plugin({
 		width: '65px',
 		height: '32px',
-   });
+    });
+	
+	$('.numb_card').number_plugin({
+		width: '95px',
+		height: '45px',
+	});
     
 // datepicker
     
@@ -147,4 +152,11 @@ $('.checkbox-label input').change(function(){
     
 // mask
     $('input[type="tel"]').mask("8-999-999-99-99");
+	
+// hidden text
+    $(".paragraph__second-part").slideUp(0);
+    $(".more-info").click(function(event){
+        $('.paragraph__second-part').slideDown(500);
+		$('.more-info').toggleClass('more-info_active');
+    });
 }); 
