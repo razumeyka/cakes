@@ -142,19 +142,16 @@ $('.checkbox-label input').change(function(){
     });	
 	
 	$('.numb_card').number_plugin({
-		width: '95px',
-		height: '45px',
+      width: '65px',
+      height: '32px',
 	});
 	
-	$(window).resize(function(){
-    	var windowWidth = window.innerWidth();
-		if(windowWidth < 1024){
-			$('.numb_card').number_plugin({
-				width: '65px',
-				height: '32px',
-			});
-		}
-	});
+	if(window.innerWidth < 1024){
+		$('.numb_card').number_plugin({
+			width: '65px',
+			height: '32px',
+		});
+	}
     
 // datepicker
     
