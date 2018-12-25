@@ -147,8 +147,6 @@ version 1.08
     
     $.fn.number_plugin = function(options) {
             var settings = $.extend({
-                'width': '65px',
-                'height': '35px',
                 'negative' : false,
                 'step' : 1,
                 'animate' : false,

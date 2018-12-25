@@ -141,26 +141,19 @@ $('.checkbox-label input').change(function(){
 		height: '32px',
     });	
 	
-	$('.numb_card').number_plugin({
-      width: '65px',
-      height: '32px',
-	});
+	$('.numb_card').number_plugin();
 	
-	if(window.innerWidth < 1024){
-		$('.numb_card').number_plugin({
-			width: '65px',
-			height: '32px',
-		});
-	}
     
 // datepicker
-    
+	
     $( "#datepicker" ).datepicker();
     
 // mask
+	
     $('input[type="tel"]').mask("8-999-999-99-99");
 	
 // hidden text
+	
     $(".paragraph__second-part").slideUp(0);
     $(".more-info").click(function(event){
         $('.paragraph__second-part').slideDown(500);
