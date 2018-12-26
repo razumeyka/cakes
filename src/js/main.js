@@ -39,6 +39,7 @@ $(document).ready(function(){
 // weight-range
     
     $( "#slider-range" ).slider({
+		range: "min",
         min: 0,
         max: 20,
         step : 0.5,
@@ -52,6 +53,23 @@ $(document).ready(function(){
             $(".input_weight").val( ui.value + "кг" );
         }
     });
+	
+// bonus-range
+	
+	$( "#slider-bonus" ).slider({
+		range: "min",
+		min: 0,
+        max: 1000,
+        value: 100,
+        create: function( event, ui ) {
+            val = $( "#slider-bonus" ).slider("value");
+            $("#bonus").html( val );
+            },
+        slide: function( event, ui ) {
+            $("#bonus").html( ui.value );
+        }
+    });
+    
     
 // price-range
     

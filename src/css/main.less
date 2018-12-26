@@ -702,6 +702,174 @@
 	display: none;
 }
 
+/*cart*/
+
+.sheet-torn_top-cart {
+	background: url(../images/background/cart_background-top.png) no-repeat bottom;
+	background-size: 100%;
+	top: -127px;
+}
+
+.sheet-torn_bottom-cart {
+	background: url(../images/background/cart_background-bottom.png) no-repeat top;
+	background-size: 100%;
+}
+
+.cart-line {
+	border-bottom: 1px solid rgb(8, 8, 7);
+	padding: 5px 0 10px;
+	width: 95%;
+	position: relative;
+}
+
+.cart-line__left {
+	align-items: center;
+	width: 300px;
+}
+
+.cart-line__right {
+	align-items: center;
+}
+
+.cart-line__fixed {
+	width: 100px;
+	text-align: center;
+}
+
+.cart-line__caption {
+	font: 700 29px "FinchFrame3";
+	color: rgb(63, 67, 64);
+	text-align: center;
+}
+
+.cart-line__photo {
+	border-radius: 2px;
+	background: url(../images/formicary.png) no-repeat rgb(246, 251, 254);
+	background-size: contain;
+	box-shadow: 0px 7px 7.8px 2.2px rgba(1, 3, 0, 0.2);
+	width: 171px;
+	height: 130px;
+	margin-right: 20px;
+}
+
+.cart-line__name {
+	font: 700 29px "FinchFrame3";
+	color: rgb(63, 67, 64);
+}
+
+.cart-line__weight {
+	font-size: 33.333px;
+	color: rgb(63, 67, 64);
+}
+
+.cart-line .main_number_plugin {
+    margin: 0 auto;
+}
+
+.cart-line .input_plugin_number {
+	font-size: 25px;
+}
+
+.cart-line__price {
+	font: 700 33px "FinchFrame3";
+	color: rgb(63, 67, 64);
+}
+
+.cart-line__delete {
+    background: url(../images/icons/delete-button.png) no-repeat center;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: -40px;
+    top: 53px;
+}
+
+.cart-line_bottom {
+	margin-top: 30px;
+}
+
+.bonus-banner{
+	border: 2px solid rgb(0, 0, 0);
+	background: url(../images/background/bonus-background.png) rgba(246, 251, 254, 0.8);
+	box-shadow: 0px 10px 14.25px 0.75px rgba(1, 3, 0, 0.25);
+	max-width: 666px;
+	flex: 1;
+	padding: 15px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-right: 30px;
+}
+
+.bonus-banner__balance {
+	font: 700 24px "FinchFrame3";
+	color: rgb(63, 67, 64);
+	margin-bottom: 15px;
+}
+
+.bonus-banner__use {
+	font-size: 21px;
+	color: rgb(63, 67, 64);
+}
+
+.bonus-banner__ui-slider {
+	border-radius: 2px;
+	background: rgba(240, 232, 193, 0.7);
+	box-shadow: 0px 10px 19px 1px rgba(1, 3, 0, 0.5);
+	width: 100%;
+	height: 40px;
+	margin: 5px 0 10px;
+	padding: 15px 25px;
+}
+
+.bonus-banner__info {
+	display: inline-block;
+	font-size: 21px;
+	color: rgb(63, 67, 64);
+	text-decoration: underline;
+	position: relative;
+	padding-left: 25px;
+}
+
+.bonus-banner__info:before {
+	content: "";
+	background: url(../images/icons/info.png) no-repeat center;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 0;
+}
+
+.cart-total {
+	font: 700 50px "FinchFrame3";
+	color: rgb(63, 67, 64);
+	max-width: 350px; 
+	flex: 1;
+}
+
+.cart-total .flex {
+	justify-content: space-around;
+}
+
+.cart-page__button {
+    width: 100%;
+	padding: 0 30px;
+}
+
+.cart-page .sheet-torn:before {
+    content: "";
+    background: url(../images/boy-cart.png) no-repeat center;
+    width: 120px;
+    height: 150px;
+    position: absolute;
+    right: 40%;
+    bottom: -324px;
+}
+
+.cart-page footer:before {
+	display: none;
+}
 
 /*media*/
 
@@ -722,6 +890,10 @@
 	
 	.sheet-torn {
 		padding: 0 10px;
+	}
+	
+	.cart-page .sheet-torn {
+		padding: 0 35px;
 	}
 }
 
@@ -794,6 +966,34 @@
 	.card-buttons {
 		margin: 20px 0;
 	}
+	
+	.cart-line {
+		width: 100%;
+	}
+
+	.cart-line__top {
+		display: none;
+	}
+	
+	.cart-line, .cart-line__left, .cart-line_bottom {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.cart-line {
+		max-width: 400px;
+		margin: 0 auto 20px;
+	}
+	
+	.cart-line__delete {
+		position: static;
+	}
+	
+	.bonus-banner {
+		margin: 0;
+		width: 100%;
+	}
+	
 }
 
 @media screen and (max-width: 639px) {
@@ -821,5 +1021,28 @@
 @media screen and (max-width: 500px) {
 	.button_card, .card-buttons_button {
 		font-size: 18px;
+	}
+	
+	.sheet-torn {
+		background: rgba(247,251,254,.8);
+		margin: 20px 0;
+		padding: 30px 15px;
+	}
+	
+	.cart-page .sheet-torn {
+		padding: 30px 15px;
+	}
+	
+	.sheet-torn_top {
+		display: none;
+	}
+	
+	.sheet-torn_bottom {
+		display: none;
+	}
+
+	.cart-line__fixed {
+		width: auto;
+		padding: 0 10px;
 	}
 }
