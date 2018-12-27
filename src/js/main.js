@@ -34,6 +34,16 @@ $(document).ready(function(){
         $(this).next().slideToggle(500);
         $(this).toggleClass('catalog-filters__question_active');
     });
+	
+    $('.radio-wrapper_address').click(function(){
+        $(".checkout-delivery__address").addClass("active");
+		$(".checkout-bordered__column_delivery").removeClass("active");
+    });
+	
+	$('.radio-wrapper_delivery').click(function(){
+        $(".checkout-bordered__column_delivery").addClass("active");
+		$(".checkout-delivery__address").removeClass("active");
+    });
      
     
 // weight-range
