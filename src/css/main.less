@@ -174,7 +174,6 @@
 	margin-top: -50px;
 }
 
-
 .breadcrumbs {
     list-style: none;
     padding: 0;
@@ -793,6 +792,7 @@
 	background: url(../images/background/bonus-background.png) rgba(246, 251, 254, 0.8);
 	box-shadow: 0px 10px 14.25px 0.75px rgba(1, 3, 0, 0.25);
 	max-width: 666px;
+	height: 180px;
 	flex: 1;
 	padding: 15px 10px;
 	display: flex;
@@ -841,6 +841,60 @@
 	left: 0;
 }
 
+.bonus-banner__info_details {
+	display: none;
+	border-radius: 10px;
+	background-color: rgb(246, 251, 254);
+	width: 600px;
+	height: 401px;
+}
+
+.bonus-info__caption {
+	font: 700 40px "FinchFrame3";
+	color: rgb(55, 54, 54);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.bonus-info__paragraph {
+	font-size: 25px;
+	color: rgb(55, 54, 54);
+	margin: 10px 0;
+}
+
+.bonus-banner__button {
+	text-transform: none;
+}
+
+.login-window {
+	display: none;
+	border-radius: 10px;
+	background: url(../images/background/authorization.png) repeat center;
+	padding: 30px 150px;
+}
+
+.login-window .flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login-window__caption {
+	font: 700 40px "FinchFrame3";
+	color: rgb(77, 73, 72);
+	text-transform: uppercase;
+}
+
+.login-window__button {
+	text-transform: none;
+}
+
+.login-window__terms {
+	font: 700 20px "FinchFrame3";
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
 .cart-total {
 	font: 700 50px "FinchFrame3";
 	color: rgb(63, 67, 64);
@@ -870,6 +924,176 @@
 .cart-page footer:before {
 	display: none;
 }
+
+/*checkout-page*/
+
+.checkout-page .sheet-torn {
+	background: url(../images/background/checkout-background.png) repeat center;
+	background-size: 100%;
+}
+
+.checkout-page .sheet-torn:before {
+    content: "";
+    background: url(../images/background/girl-checkout.png) no-repeat center;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -21px;
+    right: 100px;
+    z-index: 1;
+}
+
+.checkout-caption {
+	font: 700 37px "FinchFrame3";
+	color: rgb(63, 67, 64);
+}
+
+.checkout-bordered {
+	border-top: 1px solid rgb(8, 8, 7);
+	border-bottom: 1px solid rgb(8, 8, 7);
+}
+
+.checkout-bordered__columns {
+	margin: 0 -20px
+}
+
+.checkout-bordered__column {
+	box-sizing: border-box;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.checkout-page .input-wrapper {
+    max-width: 350px;
+    margin: 10px auto;
+}
+
+.checkout-page .input {
+	border: 1px solid rgb(77, 73, 72);
+	border-radius: 5px;
+	box-shadow: none;
+}
+
+.checkout-page .input-data-label {
+    right: 7px;
+	top: 29px;
+}
+
+.checkout-page .textarea-wrapper {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.checkout-page .textarea {
+	border: 1px solid rgb(63, 67, 64);
+	border-radius: 5px;
+	max-width: 890px;
+}
+
+.select_checkout {
+	width: 350px;
+	margin: 0 auto;
+}
+
+.select__field_checkout {
+    width: 100%;
+	box-shadow: none;
+    padding: 6px 10px;
+	border: 1px solid rgb(63, 67, 64);
+	border-radius: 5px;
+	font-size: 29px;
+}
+
+.select .select__field_checkout:before {
+    height: 39px;
+    right: 2px;
+    width: 30px;
+}
+
+.select .select__field_checkout:after {
+    height: 21px;
+    right: 31px;
+    top: 9px;
+}
+
+.address-inputs {
+	max-width: 370px;
+	margin: 0 auto;
+}
+
+.address-inputs .input-wrapper {
+	width: 50%;
+	padding: 0 10px;
+}
+
+.checkout-total {
+	border-radius: 5px;
+	background-color: rgb(246, 251, 254);
+	box-shadow: 0px 10px 14.25px 0.75px rgba(1, 3, 0, 0.25);
+	width: 100%;
+	max-width: 940px;
+	padding: 20px;
+	margin: 20px auto;
+	position: relative;
+}
+
+.checkout-total:before {
+    content: "";
+    background: url(../images/dog.png) no-repeat center;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -65px;
+    right: -22px;
+    z-index: 1;
+}
+
+.checkout-total__line {
+	width: 250px;
+}
+
+.checkout-total__argument {
+	font: 400 29px "FinchFrame3";
+	color: rgb(77, 73, 72);
+	line-height: 1;
+}
+
+.checkout-total__amount {
+	font: 700 25px "FinchFrame3";
+	color: rgb(77, 73, 72);
+	text-align: right;
+	line-height: 1;
+}
+
+.checkout-total__final-step {
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.checkout-total__term {
+	box-sizing: border-box;
+	font: 400 25px "FinchFrame3";
+	color: rgb(77, 73, 72);
+	text-align: center;
+	width: 60%;
+	max-width: 350px;
+	padding: 0 20px;
+}
+
+.checkout-total__button {
+	width: 40%;
+}
+
+.checkout-page footer:before {
+	display: none;
+}
+
+
+
+
+
 
 /*media*/
 
