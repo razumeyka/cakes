@@ -1,5 +1,6 @@
 @@include('./lib/jquery.fancybox.min.js')
 @@include('./lib/number_plugin.js')
+@@include('./lib/datepicker-ru.js')
 
 $(document).ready(function(){
     
@@ -174,7 +175,10 @@ $('.checkbox-label input').change(function(){
     
 // datepicker
 	
-    $( "#datepicker" ).datepicker();
+	$("#datepicker").datepicker({
+        inline: true,
+        language: 'ru',
+    });
     
 // mask
 	
