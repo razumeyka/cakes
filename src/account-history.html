@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('template/head.html')
+<body class="account-page account-history-page">
+    @@include('template/header.html')
+    @@include('template/menu.html')
+    <div class="main-screen main-screen_inner-page">
+        <div class="wrapper">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/" class="breadcrumbs_home">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1"/>
+                </li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Каталог</li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Наименование товара</li>
+            </ol>
+			<div class="account-nav flex">
+				<div class="button button_blue">Личные данные</div>
+				<div class="button button_blue">История заказов</div>
+				<div class="button button_blue">Выход</div>
+			</div>
+			<div class="data-screen data-screen_account-history">
+				<h2 class="caption">История заказов</h2>
+				<div class="order-table">
+					<div class="order-table__caption flex_between">
+						<div class="order-table__number">Заказ №1234</div>
+						<div class="order-table__time">Дата заказа: 20.07.2018 20:34</div>
+					</div>
+					<div class="order-table_details flex_between">
+         				<div class="order-table__lines">
+							<div class="order-table__line flex">		
+								<div class="order-table__argument">Адрес</div>
+								<div class="order-table_value">ул. Московская, д58</div>
+							</div>
+							<div class="order-table__line flex">
+								<div class="order-table__argument">Сумма заказов</div>
+								<div class="order-table__value">1 234 р</div>
+							</div>
+							<div class="order-table__line flex">
+								<div class="order-table__argument">Товаров в корзине:</div>
+								<div class="order-table__value">5</div>
+							</div>
+         				</div>
+         				<button class="button button_blue">Подробнее о заказе</button>
+         			</div>
+         		</div>
+         		<div class="order-table">
+         			<div class="order-table_details flex_between">
+         				<div class="order-table__lines">
+							<div class="order-table__line flex">		
+								<div class="order-table__argument">Адрес</div>
+								<div class="order-table_value_">ул. Московская, д58</div>
+							</div>
+							<div class="order-table__line flex">
+								<div class="order-table__argument">Сумма заказов</div>
+								<div class="order-table__value">1 234 р</div>
+							</div>
+							<div class="order-table__line flex">
+								<div class="order-table__argument">Товаров в корзине:</div>
+								<div class="order-table__value">5</div>
+							</div>
+         				</div>
+         				<button class="button button_blue">Подробнее о заказе</button>
+         			</div>
+         		</div>
+         		<div class="order-table">
+         			<div class="order-table_details flex_between">
+         				<div class="order-table__lines">
+							<div class="order-table__line flex">
+								<div class="order-table__argument">Адрес</div>
+								<div class="order-table_value">ул. Московская, д58</div>
+							</div>
+							<div class="order-table__line flex">
+								<div class="order-table__argument">Сумма заказов</div>
+								<div class="order-table__value">1 234 р</div>
+							</div>
+							<div class="order-table__line flex">
+								<div class="order-table__argument">Товаров в корзине:</div>
+								<div class="order-table__value">5</div>
+							</div>
+         				</div>
+         				<button class="button button_blue">Подробнее о заказе</button>
+         			</div>
+				</div>
+			</div>
+  			<div class="pagination">
+				<nav class="pagination-list flex" role="navigation">
+					<a class='page-numbers page-numbers_first' href='#'><<</a>
+					<a class='page-numbers page-numbers_prev' href='#'><</a>
+					<span aria-current='page' class='page-numbers current'>1</span>
+					<a class='page-numbers' href='#'>2</a>
+					<a class='page-numbers' href='#'>3</a>
+					<a class='page-numbers' href='#'>4</a>
+					<a class='page-numbers' href='#'>5</a>
+					<a class='page-numbers page-numbers_next' href='#'>></a>
+					<a class='page-numbers page-numbers_last' href='#'>>></a>
+				</nav> 
+			</div>
+   		</div>
+    </div>
+    @@include('template/footer.html')
+</body>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js?ver=2.2'></script>
+<script src="/js/main.js"></script>
+</html> 

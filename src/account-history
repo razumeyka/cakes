@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('template/head.html')
+<body class="account-page">
+    @@include('template/header.html')
+    @@include('template/menu.html')
+    <div class="main-screen main-screen_inner-page">
+        <div class="wrapper">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/" class="breadcrumbs_home">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1"/>
+                </li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Каталог</li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Наименование товара</li>
+            </ol>
+            <div class="photo-info-screen flex">
+                <div class="account-photo">
+                	<div class="account-photo__img"></div>
+                	<label class="file-wrapper file-wrapper_designer">
+						<input type="file" name="file" multiple="multiple">	
+						<span>Загрузить фото</span>	
+					</label>
+					<label class="file-wrapper file-wrapper_designer">
+						<input type="file" name="file" multiple="multiple">	
+						<span>Изменить</span>	
+					</label>
+                </div>
+            	<div class="account-info">
+					<div class="account-nav flex">
+						<div class="button button_blue">Личные данные</div>
+						<div class="button button_blue">История заказов</div>
+						<div class="button button_blue">Выход</div>
+					</div>
+					<div class="data-screen data-screen_account">
+						<h2 class="caption">Личные данные</h2>
+						<div class="flex">
+							<label class="input-wrapper input-wrapper_changed">
+								<span class="input-label">Фамилия*</span>
+								<input class="input" type="text" required>
+							</label>
+							<label class="input-wrapper input-wrapper_changed">
+								<span class="input-label">Имя*</span>
+								<input class="input" type="text" required>
+							</label>
+							<label class="input-data-wrapper input-wrapper_changed input-wrapper">
+								<span class="input-label">Дата рождения </span>
+								<span class="input-data-label"></span>
+								<input type="text" class="input input-data" id="datepicker" placeholder="дд/мм/гг">
+							</label>
+							<div class="select select_checkout">
+							   <input type="hidden" name="" value="" size="40" class="" aria-required="true" aria-invalid="false">
+							   <div class="select__field select__field_plates select__field_checkout">Мужской</div>
+							   <ul>
+								   <li>Мужской</li>
+								   <li>Женский</li>
+							   </ul>
+							</div>
+							<label class="input-wrapper input-wrapper_changed">
+								<span class="input-label">Телефон*</span>
+								<input class="input" type="tel" required>
+							</label>
+							<label class="input-wrapper input-wrapper_changed">
+								<span class="input-label">Электронная почта</span>
+								<input class="input" type="email">
+							</label>
+							<div class="select select_checkout">
+							   <input type="hidden" name="" value="" size="40" class="" aria-required="true" aria-invalid="false">
+							   <div class="select__field select__field_plates select__field_checkout">Улица</div>
+							   <ul>
+								   <li>Воз-ан-влен</li>
+								   <li>Зыбицкая</li>
+							   </ul>
+							</div>
+							<label class="input-data-wrapper input-wrapper_changed input-wrapper">
+								<span class="input-label">Дата и время </span>
+								<span class="input-data-label"></span>
+								<input type="text" class="input input-data" id="datepicker" placeholder="дд/мм/гг">
+							</label>
+							<label class="input-wrapper input-wrapper_changed">
+								<span class="input-label">ИНН организации</span>
+								<input class="input" type="text">
+							</label>
+						</div>
+						<div class="flex">
+							<div class="address-inputs-wr">
+								<div class="address-inputs flex">
+									<label class="input-wrapper input-wrapper_changed">
+										<span class="input-label">Дом</span>
+										<input class="input" type="text">
+									</label>
+									<label class="input-wrapper input-wrapper_changed">
+										<span class="input-label">Кв/офис</span>
+										<input class="input" type="text">
+									</label>
+									<label class="input-wrapper input-wrapper_changed">
+										<span class="input-label">Подъезд</span>
+										<input class="input" type="text">
+									</label>
+									<label class="input-wrapper input-wrapper_changed">
+										<span class="input-label">Этаж</span>
+										<input class="input" type="text">
+									</label>
+								</div>
+							</div>
+							<a href="#" class="button button_blue">Редактировать</a>
+						</div>
+					</div>
+				</div>
+   			</div>
+   		</div>
+    </div>
+    @@include('template/footer.html')
+</body>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js?ver=2.2'></script>
+<script src="/js/main.js"></script>
+</html> 
