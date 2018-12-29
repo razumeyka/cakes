@@ -67,7 +67,18 @@
 					</div>
 					<div class="card-info__column">
 						<div class="card-buttons flex_between">
-							<div class="card-buttons_button button button_blue ">Купить в один клик</div>
+							<a data-fancybox href="#one-click-window" class="card-buttons_button button button_blue ">Купить в один клик</a>
+							<div class="modal-window modal-window_one-click" id="one-click-window">
+								<div class="modal-inner flex">
+									<div class="modal-inner__caption">Покупка в один клик</div>
+									<input class="input" type="text" placeholder="Ваше имя" required>
+									<input class="input" type="tel" placeholder="Ваш номер телефона"  required>
+									<div class="button button_blue modal-inner__button">Заказать</div>
+									<div class="modal-inner__terms">Нажимая кнопку “ВОЙТИ”, Вы соглашаетесь с условиями 
+									<a href="#">Пользовательского соглашения</a>
+									</div>
+								</div>
+							</div>
 							<div class="card-buttons_button button button_blue">Добавить в корзину</div>
 						</div>
 						<div class="button button_blue button_card">Вернуться назад</div>
