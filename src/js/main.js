@@ -191,4 +191,23 @@ $('.checkbox-label input').change(function(){
         $('.paragraph__second-part').slideDown(500);
 		$('.more-info').toggleClass('more-info_active');
     });
+	
+// slider order
+    
+    $('.order__carousel .next,.order__carousel .prev').click(function(){
+        console.log('click carousel');
+        var countslides=jQuery('.order__content_container').children().children().length-Math.round(parseFloat(jQuery('.order__content_wrapper').css('width'))/parseFloat(jQuery('.order__one_doc').css('width')));
+        var slide=$(this).closest('.order__carousel').data('slide');
+        console.log(countslides);
+        if($(this).hasClass('next')){
+            slide++;
+            if(slide>countslides)slide=0;
+        }
+        if($(this).hasClass('prev')){
+            slide--;
+            if(slide<0)slide=countslides;
+        }
+         $(this).closest('.order__carousel').find('.order__long').css('margin-left','-'+(slide*25)+'%');
+		$(this).closest('.order__carousel').data('slide',slide);
+    });
 }); 
