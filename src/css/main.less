@@ -1765,8 +1765,110 @@
 	max-width: 500px;
 }
 
+/*wholesale*/
 
+.wholesale-page .data-screen_2girls {
+   margin-top: 30px;
+}
 
+.wholesale-img {
+	background: url(../images/wholesale.png) no-repeat center;
+	background-size: cover;
+	border-radius: 2px;
+	box-shadow: 0px 10px 14.25px 0.75px rgba(1, 3, 0, 0.25);
+	width: 500px;
+	height: 500px;
+	float: left;
+	margin-right: 30px;
+}
+
+.paragraph_wholesale {
+	font: 400 28px "FinchFrame3";
+	color: rgb(63, 67, 64);
+	line-height: 1;
+	margin: 5px 0;
+}
+
+/*company-page*/
+
+.company-page .data-screen {
+	padding: 30px 100px;
+	margin-top: 30px;
+}
+
+.company__carousel{
+    position: relative;
+	margin-bottom: 30px;
+}
+
+.company__carousel .company__carousel_wr{
+    overflow: hidden;
+    margin: 0 -10px;
+}
+
+.company__carousel .company__content_wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.company__content_container {
+    width: 100%;
+}
+
+.company__carousel .company__long{
+	width:1000%; 
+    transition: all 0.15s linear 0s;
+}
+
+.company__carousel .company__one_doc{
+    padding: 0 10px;
+    box-sizing: border-box;
+    float: left;
+    width: 2.5%;
+}
+
+.company__carousel .company__one_doc .company__inner{
+	width: 100%;
+    font-size: 0;
+}
+
+.company__carousel .company__one_doc img{
+	width: 100%;
+	height: 150px;
+}
+
+.company__control{
+    width: 35px;
+    height: 40px;
+	cursor:pointer;
+    position: absolute;
+    top: 50px;
+}
+
+.company__control.next{
+    background: url(../../images/icons/right-arrow.svg) no-repeat center;
+    right: -50px;
+}
+
+.company__control.next:hover {
+    background: url(../../images/icons/right-arrow_hover.svg) no-repeat center;
+}
+
+.company__control.prev{
+    background: url(../../images/icons/right-arrow.svg) no-repeat center;
+    transform: rotate(180deg);
+    left: -50px;
+}
+
+.company__control.prev:hover {
+    background: url(../../images/icons/right-arrow_hover.svg) no-repeat center;
+}
+
+.company-page p {
+	font: 400 21px "FinchFrame3";
+	color: rgb(63, 67, 64);
+	margin: 0;
+}
 
 /*media*/
 
@@ -1935,6 +2037,19 @@
 	.sweets__item-wr {
 		width: 50%;
 	}
+	
+	.wholesale-img {
+		width: 300px;
+		height: 300px;
+	}
+	
+	.company-page .data-screen {
+		padding: 30px 60px;
+	}
+
+	.company__content_container {
+		width: 133%;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -2098,6 +2213,27 @@
 	.cakes-page .pagination {
 		display: flex;
 	}
+	
+	.wholesale-img {
+		width: 200px;
+		height: 200px;
+	}
+	
+	.company__content_container {
+		width: 200%;
+	}
+	
+	.company-page .data-screen {
+		padding: 30px 30px;
+	}
+	
+	.company__control.next {
+		right: -35px;
+	}
+	
+	.company__control.prev {
+		left: -35px;
+	}
 }
 
 @media screen and (max-width: 639px) {
@@ -2242,5 +2378,15 @@
 	
 	.card-info__cake {
 		height: 250px;
+	}
+	
+	.wholesale-img {
+		width: 100%;
+		height: 300px;
+		margin: 0 0 20px;
+	}
+	
+	.company__content_container {
+		width: 400%;
 	}
 }

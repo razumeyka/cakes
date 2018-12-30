@@ -224,4 +224,23 @@ $('.checkbox-label input').change(function(){
          $(this).closest('.order__carousel').find('.order__long').css('margin-left','-'+(slide*25)+'%');
 		$(this).closest('.order__carousel').data('slide',slide);
     });
+	
+// slider company
+    
+    $('.company__carousel .next,.company__carousel .prev').click(function(){
+        console.log('click carousel');
+        var countslides=jQuery('.company__content_container').children().children().length-Math.round(parseFloat(jQuery('.company__content_wrapper').css('width'))/parseFloat(jQuery('.company__one_doc').css('width')));
+        var slide=$(this).closest('.company__carousel').data('slide');
+        console.log(countslides);
+        if($(this).hasClass('next')){
+            slide++;
+            if(slide>countslides)slide=0;
+        }
+        if($(this).hasClass('prev')){
+            slide--;
+            if(slide<0)slide=countslides;
+        }
+         $(this).closest('.company__carousel').find('.company__long').css('margin-left','-'+(slide*25)+'%');
+		$(this).closest('.company__carousel').data('slide',slide);
+    });
 }); 
