@@ -41,11 +41,25 @@ $(document).ready(function(){
 		$(".checkout-bordered__column_delivery").removeClass("active");
     });
 	
+// checkout - delivery
+	
 	$('.radio-wrapper_delivery').click(function(){
         $(".checkout-bordered__column_delivery").addClass("active");
 		$(".checkout-delivery__address").removeClass("active");
     });
-     
+	
+// modal bonus
+	
+	$('.modal-inner__client-individual').click(function(){
+        $(".input_individual").addClass("active");
+		$(".input_company").removeClass("active");
+    });
+	
+	$('.modal-inner__client-company').click(function(){
+        $(".input_company").addClass("active");
+		$(".input_individual").removeClass("active");
+    });
+	
     
 // weight-range
     

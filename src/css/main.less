@@ -1281,6 +1281,9 @@
 
 .data-screen__bottom-lines {
 	align-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .account-page .address-inputs-wr {
@@ -1306,7 +1309,7 @@
 /*account-history*/
 
 .data-screen_2girls {
-	background: url(../images/background/2girls-background.png) no-repeat top;
+	background: url(../images/background/2girls-background.png) no-repeat top rgba(246, 251, 254, 0.8);
 	padding: 20px 30px;
 } 
 
@@ -1324,7 +1327,7 @@
 }
 
 .order-table__caption {
-	border: 1px solid rgb(0, 0, 0);
+	border-bottom: 1px solid rgb(0, 0, 0);
 	background-color: rgb(238, 190, 108);
 	padding: 5px 100px;
 	font: 700 33px "FinchFrame3";
@@ -1378,7 +1381,8 @@
 
 .order-table__headline {
 	background: rgb(238, 190, 108);
-	border: 1px solid rgb(63, 67, 64);
+	border-bottom: 1px solid rgb(63, 67, 64);
+	border-radius: 5px;
 	font: 700 33px "FinchFrame3";
 	color: rgb(63, 67, 64);
 }
@@ -1603,8 +1607,46 @@
 	margin: 0 10px;
 }
 
-.window_bonus-login {
-	background: url(../images/background/window-bonus-login.png);
+.modal-window_bonus-login {
+	background: url(../images/background/window-bonus-login.png) no-repeat center;
+	background-size: cover;
+}
+
+.modal-inner .input-wrapper, .modal-inner .flex_between  {
+	width: 100%;
+	max-width: 300px;
+	margin: 10px 0;
+}
+
+.modal-inner__client-type.flex_between {
+	max-width: 520px;
+}
+
+.input_company {
+	display: none;
+}
+
+.input_company.active {
+	display: block;
+}
+
+.input_individual {
+	display: none;
+}
+
+.input_individual.active {
+	display: block;
+}
+
+.modal-inner__link {
+	display: block;
+	font: 700 30px "FinchFrame3";
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+}
+
+.modal-window_password {
+	background: url(../images/background/window-password.png) no-repeat center;
 }
 
 .bonus-system__description {
@@ -1612,6 +1654,116 @@
 	color: rgb(63, 67, 64);
 }
 
+/*cakes*/
+
+.cakes-page .account-nav {
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.cakes-page .account-nav .button {
+	width: 20%;
+}
+
+.sweets {
+	margin: 0 -20px;
+}
+
+.sweets__item-wr {
+	box-sizing: border-box;
+	width: 33.3333%;
+	padding: 20px;
+}
+
+.sweets__item {
+	background: url(../images/cake4.png) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	position: relative;
+}
+
+.sweets__name {
+	display: none;
+	background-color: rgba(63, 67, 64, 0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	padding: 20px;
+	font: 700 37.5px "FinchFrame3";
+	color: rgb(246, 251, 254);
+	align-items: center;
+	justify-content: center;
+}
+
+.sweets__item:hover .sweets__name {
+	display: flex;
+}
+
+.cakes-page .pagination {
+	display: none;
+}
+
+/*cake*/
+
+.cake-page .sheet-torn_top {
+	background: url(../images/background/cake_background-top.png) no-repeat bottom;
+	background-size: 100%;
+	top: -125px;
+}
+
+.card-info__cake {
+    background: url(../images/cake5.png) no-repeat center;
+    width: 100%;
+    height: 450px;
+}
+
+.modal-window_contacts {
+	background: url(../images/background/window-contacts.png) no-repeat center;
+	background-size: cover;
+	padding: 20px 50px;
+}
+
+.modal-inner .ui-slider-wr, .modal-inner .file-wrapper {
+    width: 100%;
+    max-width: 300px;
+	margin: 25px 0 15px;
+}
+
+.modal-window_contacts .modal-inner .input-wrapper {
+    margin: 5px 0;
+}
+
+.modal-inner .radio-label {
+	font: 700 25px "FinchFrame3";
+	color: rgb(63, 67, 64);
+}
+
+.modal-inner .input-wrapper_changed .input-data-label {
+    right: 7px;
+    top: 15px;
+}
+
+.modal-inner .file-wrapper {
+	font: 700 23px "FinchFrame3";
+	text-transform: uppercase;
+}
+
+.modal-inner .file-wrapper:hover {
+	background: #3f4340;
+	color: rgba(246, 251, 254, 0.902);
+}
+
+.modal-inner .textarea-label {
+    font: 400 23px "FinchFrame3";
+    color: #3f4340;
+    padding-left: 25px;
+	max-width: 500px;
+}
 
 
 
@@ -1642,7 +1794,7 @@
 	}
 	
 	.contacts-page .sheet-torn {
-		padding: 0 50px;
+		padding: 20px 50px;
 	}
 	
 	.data-screen {
@@ -1778,6 +1930,10 @@
 	
 	.bonus-system__steps .button {
 		width: 250px;
+	}
+	
+	.sweets__item-wr {
+		width: 50%;
 	}
 }
 
@@ -1933,6 +2089,15 @@
 		border: none;
 		margin-bottom: 30px;
 	}
+	
+	.modal-inner__client-type.flex_between {
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.cakes-page .pagination {
+		display: flex;
+	}
 }
 
 @media screen and (max-width: 639px) {
@@ -1981,6 +2146,20 @@
 	.order-table__caption {
 		padding: 5px 10px;
 		font-size: 24px;
+	}
+	
+	.sweets__item-wr {
+		width: 100%;
+	}
+	
+	.cakes-page .account-nav .button {
+		width: 50%;
+		margin: 5px;
+		max-width: 200px;
+	}
+	
+	.modal-window_contacts {
+		padding: 20px 15px;
 	}
 }
 
@@ -2046,7 +2225,22 @@
 		padding:20px 15px;
 	}
 	
+	.bonus-system__card-img {
+		background-size: contain;
+		width: 250px;
+		height: 250px;
+	}
+	
 	.bonus-system__steps .button {
-		width: 220px;
+		width: 150px;
+		font-size: 22px;
+	}
+
+	.cakes-page .account-nav .button {
+		max-width: 140px;
+	}
+	
+	.card-info__cake {
+		height: 250px;
 	}
 }

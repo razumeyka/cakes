@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('template/head.html')
+<body class="cake-page">
+    @@include('template/header.html')
+    @@include('template/menu.html')
+    <div class="main-screen main-screen_inner-page">
+        <div class="wrapper">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/" class="breadcrumbs_home">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1"/>
+                </li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Каталог</li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Наименование товара</li>
+            </ol>
+            <div class="sheet-torn">
+            	<div class="sheet-torn_top"></div>
+            	<div class="sheet-torn_bottom"></div>
+				<h2 class="caption">Торт "C Новым годом!"</h2>
+				<div class="card-info flex">
+					<div class="card-info__column">
+						<div class="card-info__cake"></div>
+					</div>
+					<div class="card-info__column card-info__column_text">
+						<div class="paragraph">Кусочки домашнего песочного печенья, перемешенные со вкуснейшим кремом на основе вареной сгущенки.</div>
+						<div class="more-info"></div>
+						<div class="paragraph paragraph__second-part">Кусочки домашнего песочного печенья, перемешенные со вкуснейшим кремом на основе вареной сгущенки.
+						</div>
+						<div class="card-buttons flex_between">
+							<a href="#" class="button button_blue card-buttons_button">Вернуться назад</a>
+							<a data-fancybox href="#contacts-window" class="card-buttons_button button button_blue ">Заказать</a>
+							<div class="modal-window modal-window_contacts" id="contacts-window">
+								<div class="modal-inner flex">
+									<div class="modal-inner__caption">Контактная информация</div>
+									<label class="input-wrapper">
+										<span class="input-label">Ваше имя*</span>
+										<input class="input" type="text" required>
+									</label>
+									<label class="input-wrapper">
+										<span class="input-label">Контактный телефон*</span>
+										<input class="input" type="tel" required>
+									</label>
+									<label class="input-wrapper">
+										<span class="input-label">Электронная почта</span>
+										<input class="input" type="mail">
+									</label>
+									<div>
+										<label class="radio-wrapper radio-wrapper_delivery">
+											<span class="radio-label radio-label_big-black">Привезите тортик</span>
+											<input type="radio">
+										</label>
+										<label class="radio-wrapper radio-wrapper_delivery">
+											<span class="radio-label radio-label_big-black">Заберу сам</span>
+											<input type="radio" checked="checked">
+										</label>
+									</div>
+									<label class="input-data-wrapper input-wrapper input-wrapper_changed">
+										<span class="input-data-label"></span>
+										<input type="text" class="input input-data" id="datepicker" placeholder="дд/мм/гг">
+									</label>
+									<div class="ui-slider-wr">
+										<div class="ui-slider" id="slider-range">
+											<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+											<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default">
+												<span class="ui-slider-weight" id="weight"></span>
+											</span>
+										</div>
+									</div>
+									<label class="input-wrapper">
+										<input class="input input_weight" type="text" placeholder="вес торта">
+									</label>
+									<label class="file-wrapper file-wrapper_designer">
+										<input type="file" name="file" multiple="multiple">	
+										<span>Загрузить эскиз</span>	
+									</label>
+									<label class="textarea-wrapper">
+										<span class="textarea-label">Комментарии к заказу</span>
+										<textarea type="text" name="description" value="" class="textarea" placeholder="Ваш комментарий..."></textarea>	
+									</label>
+									<div class="button button_blue modal-inner__button">Заказать</div>
+									<div class="modal-inner__terms">Нажимая кнопку “Заказать”, Вы соглашаетесь с условиями 
+									<a href="#">Пользовательского соглашения</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>   
+    </div>
+    @@include('template/footer.html')
+</body>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js?ver=2.2'></script>
+<script src="/js/main.js"></script>
+</html> 
