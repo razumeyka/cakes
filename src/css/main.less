@@ -1870,6 +1870,84 @@
 	margin: 0;
 }
 
+/*news*/
+
+.news-content {
+	margin-top: 30px;
+}
+
+.widget-vk {
+	background: #ffffff;
+	width: 30%;
+	box-shadow: 0px 10px 14.25px 0.75px rgba(1, 3, 0, 0.25);
+	margin-left: 30px;
+}
+
+.news-page .data-screen {
+	flex: 1;
+	padding: 20px 30px;
+}
+
+.news-page .data-screen:after {
+    display: none;
+}
+
+.news-item__img {
+	background: url(../images/happy-hours.png) no-repeat center;
+	background-size: contain;
+	border: 1px solid rgb(63, 67, 64);
+	border-radius: 5px;
+	background-color: rgb(246, 251, 254);
+	width: 248px;
+	height: 248px;
+	margin-right: 20px;
+}
+
+.news-item__text {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.news-item__caption {
+	font: 700 41px "FinchFrame3";
+	color: rgb(63, 67, 64);
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.news-item__description {
+	font: 400 29px "FinchFrame3";
+	color: rgb(63, 67, 64);
+}
+
+.news-item__button {
+	text-transform: none;
+	margin: 30px 0 0 auto;
+}
+
+.news-item {
+	position: relative;
+	padding-bottom: 70px;
+}
+
+.news-item::after {
+    content: "";
+    background-color: rgba(63,67,64,.5);
+    width: 80%;
+    height: 2px;
+    position: absolute;
+    bottom: 45px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
 /*media*/
 
 @media screen and (max-width: 1279px) {
@@ -2049,6 +2127,25 @@
 
 	.company__content_container {
 		width: 133%;
+	}
+	
+	.news-page .data-screen {
+		padding: 20px 15px;
+	}
+	
+	.news-item__img {
+		width: 200px;
+		height: 200px;
+	}
+	
+	.news-item__description {
+		font-size: 26px;
+		line-height: 1;
+	}
+	
+	.news-item__button {
+		font-size: 30px;
+		margin-top: 15px;
 	}
 }
 
@@ -2234,6 +2331,17 @@
 	.company__control.prev {
 		left: -35px;
 	}
+	
+	.news-content {
+		flex-direction: column;
+	}
+	
+	.widget-vk {
+		width: 100%;
+		max-width: 400px;
+		height: 400px;
+		margin: 30px auto 0;
+	}
 }
 
 @media screen and (max-width: 639px) {
@@ -2388,5 +2496,19 @@
 	
 	.company__content_container {
 		width: 400%;
+	}
+	
+	.news-item__img {
+		width: 100px;
+		height: 100px;
+		margin-right: 10px;
+	}
+	
+	.news-item__description {
+		font-size: 20px;
+	}
+	
+	.news-item__button {
+		font-size: 20px;
 	}
 }
