@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('template/head.html')
+<body class="delivery-page">
+    @@include('template/header.html')
+    @@include('template/menu.html')
+    <div class="main-screen main-screen_inner-page">
+        <div class="wrapper">
+            <ol itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <a itemscope itemtype="http://schema.org/Thing" itemprop="item" href="/" class="breadcrumbs_home">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1"/>
+                </li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Каталог</li>
+                <li class="slash"><span>/</span></li>
+                <li class="unactive"><span></span>Наименование товара</li>
+            </ol>
+			<div class="data-screen data-screen_2girls">
+				<div class="caption">Доставка и оплата</div>
+				<div class="delivery-terms flex">
+					<div class="delivery-shedule">
+						<div class="delivery-shedule__caption">Режим работы</div>
+						<div>Прием заказов с 09:00 до 22:00</div>
+						<div>Доставка С 09:00 до 19:00</div>
+						<div>Ваш заказ будет доставлен в течение 
+						3 часов, либо в конкретное время, 
+						указанное вами при оформлении заказа.
+						Заказы на торты и кенди бары принимаются
+						не менее, чем за 5 дней до мероприятия.</div>
+					</div>
+					<div class="delivery-table">
+						<div class="delivery-table__headline flex">
+							<div class="delivery-table__item1">Район</div>
+							<div class="delivery-table__item2">Минимальная сумма заказа для доставки</div>
+							<div class="delivery-table__item3">Стоимость доставки</div>
+						</div>
+						<div class="delivery-table__parameter flex">
+							<div class="delivery-table__item1">Уралмаш. Эльмаш.</div>
+							<div class="delivery-table__item2">400</div>
+							<div class="delivery-table__item3">100</div>
+						</div>
+						<div class="delivery-table__parameter flex">
+							<div class="delivery-table__item1">Семь Ключей, Пионерский, Вокзальный, Завокзальный, Новая Сортировка, Старая Сортировка.</div>
+							<div class="delivery-table__item2">400</div>
+							<div class="delivery-table__item3">100</div>
+						</div>
+						<div class="delivery-table__parameter flex">
+							<div class="delivery-table__item1">Центр, Юго-Запад, Виз, Автовокзал, Ботанический, Втузгородок, Заречный, Вторчермет, Уктус, микр. Широкая Речка, УНЦ (Краснолесье),  Шарташ, Изоплит, ЖБИ,  Синие Камни, Лечебный, Лиственный, Карасьеозерский 1 и 2, Палникс кот.пос, Керамика и Елизавет, Нижнеисетск, Химмаш, Совхозный</div>
+							<div class="delivery-table__item2">400</div>
+							<div class="delivery-table__item3">100</div>
+						</div>
+					</div>
+				</div>
+				<div class="delivery__caption">СПОСОБЫ ОПЛАТЫ</div>
+				<ul>
+					<li>Наличный расчёт</li>
+					<li>Если товар доставляется курьером, то оплата осуществляется наличными курьеру в руки.</li>
+					<li>Банковской картой</li>
+				</ul>
+				<p>Для выбора оплаты товара с помощью банковской карты на соответствующей странице необходимо нажать кнопку «Оплата заказа банковской картой». Оплата происходит через ПАО СБЕРБАНК с использованием Банковских карт следующих платежных систем:</p>
+				<ul>
+					<li>МИР</li>
+					<li>VISA International</li>
+					<li>Mastercard Worldwide</li>
+				</ul>
+				<div class="delivery__caption">ОПИСАНИЕ ПРОЦЕССА ПЕРЕДАЧИ ДАННЫХ</div>
+				<p>Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard SecureCode для проведения платежа также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int. и MasterCard Europe Sprl. </p>
+				<div class="delivery__caption">ПРЕТЕНЗИИ ПО КАЧЕСТВУ И КОМПЛЕКЦИИ ТОВАРА ПРИНИМАЮТСЯ ТОЛЬКО В МОМЕНТ ПЕРЕДАЧИ ЗАКАЗА ОТ КУРЬЕРА К ПОКУПАТЕЛЮ. ПРИ ПОЛУЧЕНИИ ЗАКАЗА В ПРИСУТСТВИИ КУРЬЕРА ОБЯЗАТЕЛЬНО ПРОВЕРЬТЕ ЗАКАЗ НА НАЛИЧИЕ ВСЕХ ПЛАТНЫХ ПОЗИЦИЙ ВО ИЗБЕЖАНИЕ НЕДОРАЗУМЕНИЙ.</div>
+				<p>В случае обнаружения некомплектного заказа (фактическое отсутствие платных позиций, но присутствие таких позиций в накладной). поврежденного. Необходимо вычеркнуть эти позиции из накладной и не производить оплату за недостающий/поврежденный товар.</p>
+				<p>*Для товаров стоимостью до 500р. возможно только повторное оформление заказа, время доставки в таком случае регулируются текущими сроками и загруженностью производства. Доставка товара оплачивается в зависимости от района.</p>
+			</div>
+   		</div>
+    </div>
+    @@include('template/footer.html')
+</body>
+<script src="/js/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js?ver=2.2'></script>
+<script src="/js/main.js"></script>
+</html> 

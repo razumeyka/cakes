@@ -66,7 +66,18 @@
         <div class="flex">
             <div class="bordered-top-bottom bordered-top-bottom_header bordered-top-bottom_time-tel">
                 <div class="bordered-top-bottom__time">с 9:00 до 22:00</div>
-                <a href="tel:+79221816600" class="bordered-top-bottom__tel">+7(922)-181-66-00</a>
+                <a data-fancybox href="#call-window" class="bordered-top-bottom__tel">+7(922)-181-66-00</a>
+                <div class="modal-window modal-window_call" id="call-window">
+					<div class="modal-inner flex">
+						<div class="modal-inner__caption">Заказать обратный звонок</div>
+						<input class="input" type="text" placeholder="Ваше имя" required>
+						<input class="input" type="tel" placeholder="Ваш номер телефона"  required>
+						<div class="button button_blue modal-inner__button">Заказать</div>
+						<div class="modal-inner__terms">Нажимая кнопку “ЗАКАЗАТЬ”, Вы соглашаетесь с условиями 
+						<a href="#">Пользовательского соглашения</a>
+						</div>
+					</div>
+				</div>
             </div>
             <div class="bordered-top-bottom bordered-top-bottom_header bordered-top-bottom_address">
                 <div class="bordered-top-bottom__address">ул. 40 лет октября 42/1 Индустрии 104. ЖК Каскад</div>
