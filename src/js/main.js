@@ -193,6 +193,15 @@ $('.checkbox-label input').change(function(){
         inline: true,
         language: 'ru',
     });
+	
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $("#ui-datepicker-div");
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			div.hide(); // скрываем его
+		}
+	});
+
     
 // mask
 	
